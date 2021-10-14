@@ -1,3 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.z-navbar {
+    @apply grid grid-cols-7 py-4 px-6 sm:items-baseline w-full
+}
