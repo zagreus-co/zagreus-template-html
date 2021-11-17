@@ -32236,8 +32236,6 @@ video {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
