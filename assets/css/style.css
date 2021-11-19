@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6{
   background: #fff;
   box-shadow: none;
 }
- li a:hover + .sub-menu,
+.navbar li a:hover + .sub-menu,
 .sub-menu:hover {
   display: block !important;
 }
