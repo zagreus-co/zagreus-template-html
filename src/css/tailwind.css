@@ -3,13 +3,13 @@
 @import "tailwindcss/utilities";
 
 .navbar {
-  @apply flex justify-between py-4 w-full;
+  @apply flex justify-between items-center py-4 w-full;
 }
 .navbar .navbar-logo { 
   @apply flex flex-nowrap flex-grow md:flex-grow-0 text-white;
 }
 .navbar ul.nav-items {
-  @apply space-x-5 hidden lg:flex;
+  @apply space-x-5 mr-auto ml-8 hidden lg:flex;
 }
 .navbar .contact-area {
   @apply xl:ml-0 xl:bg-white rounded-full text-purple-900 shadow-md xl:grid xl:grid-cols-2;
