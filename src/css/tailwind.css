@@ -3,7 +3,16 @@
 @import "tailwindcss/utilities";
 
 .navbar {
-  @apply grid grid-cols-7 py-4 sm:items-baseline w-full;
+  @apply flex justify-between items-center py-4 w-full;
+}
+.navbar .navbar-logo { 
+  @apply flex flex-nowrap flex-grow md:flex-grow-0 text-white;
+}
+.navbar ul.nav-items {
+  @apply space-x-5 mr-auto ml-8 hidden lg:flex;
+}
+.navbar .contact-area {
+  @apply xl:ml-0 xl:bg-white rounded-full text-purple-900 shadow-md xl:grid xl:grid-cols-2;
 }
 .nav-item {
   @apply text-lg no-underline text-white hover:text-pink-600 transition duration-200;

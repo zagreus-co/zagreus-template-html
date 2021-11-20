@@ -1,27 +1,36 @@
-@keyframes rotatedelement{
+@keyframes rotatedelement {
   0% {
-      -webkit-transform: translate(0) rotate(0deg);
-      transform: translate(0) rotate(0deg);
+    -webkit-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
   }
   25% {
-      -webkit-transform: translate(-10px, 10px) rotate(10deg);
-      transform: translate(-10px, 10px) rotate(10deg);
+    -webkit-transform: translate(-10px, 10px) rotate(10deg);
+    transform: translate(-10px, 10px) rotate(10deg);
   }
   50% {
-      -webkit-transform: translate(5px, -5px) rotate(25deg);
-      transform: translate(5px, -5px) rotate(25deg);
+    -webkit-transform: translate(5px, -5px) rotate(25deg);
+    transform: translate(5px, -5px) rotate(25deg);
   }
   75% {
-      -webkit-transform: translate(15px, -5px) rotate(15deg);
-      transform: translate(15px, -5px) rotate(15deg);
+    -webkit-transform: translate(15px, -5px) rotate(15deg);
+    transform: translate(15px, -5px) rotate(15deg);
   }
   to {
-      -webkit-transform: translate(0) rotate(0deg);
-      transform: translate(0) rotate(0deg);
+    -webkit-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
   }
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Rubik';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik";
+}
+.rubik {
+  font-family: "Rubik";
+  font-weight: 600;
 }
 .header {
   background-image: url("../img/top_bg.jpg");
@@ -57,21 +66,47 @@ h1,h2,h3,h4,h5,h6{
 .sub-menu:hover {
   display: block !important;
 }
-.btn {
+.btn-dark {
   color: #fff;
-  background-color: transparent;
-  font-size:'Rubik';
+  font-size: 13px;
+  background-color: #020c27;
+  font-family: "Rubik" !important;
   font-weight: 500;
   letter-spacing: 0.2px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.9rem;
   border: 2px solid #3b3564;
-  transform: all 0.4s;
   border-radius: 30px;
   cursor: pointer;
+  text-transform: uppercase;
 }
-.btn:hover {
+.btn-dark:hover {
   background-color: #3b3564;
 }
-.cub{
+.btn-light {
+  color: #928fac;
+  font-size: 13px;
+  background-color: transparent;
+  font-family: "Rubik" !important;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 0.9rem;
+  border: 2px solid #e6eaf9;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-light:hover {
+  background-color: #3b3564;
+  color: #fff;
+}
+.cub {
   animation: rotatedelement 5s linear infinite;
+}
+.header--ul li::before {
+  display: inline-flex;
+  content: url("../img/check12.png");
+  width: 19px;
+  height: 19px;
+  vertical-align: sub;
+  margin-right: 7px;
 }
