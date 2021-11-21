@@ -102,11 +102,10 @@ h6 {
 .cub {
   animation: rotatedelement 5s linear infinite;
 }
-.header--ul li::before {
-  display: inline-flex;
-  content: url("../img/check12.png");
-  width: 19px;
-  height: 19px;
-  vertical-align: sub;
-  margin-right: 7px;
+.video-section{
+  background-image: url("../img/bg-2.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
