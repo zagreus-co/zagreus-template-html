@@ -5,6 +5,7 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'primary': '#f8f8f8',
+      'dark': '#030c26',
      }),
     extend: {
       fontFamily: {
