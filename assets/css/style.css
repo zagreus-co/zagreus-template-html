@@ -22,46 +22,46 @@
 }
 @keyframes movedelement {
   0% {
-      -webkit-transform: translate(0);
-      transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
   25% {
-      -webkit-transform: translate(-10px, -10px);
-      transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
   }
   50% {
-      -webkit-transform: translate(-5px, -5px);
-      transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
   }
   75% {
-      -webkit-transform: translate(-10px, 5px);
-      transform: translate(-10px, 5px);
+    -webkit-transform: translate(-10px, 5px);
+    transform: translate(-10px, 5px);
   }
   to {
-      -webkit-transform: translate(0);
-      transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
 }
 @keyframes movedelement2 {
   0% {
-      -webkit-transform: translate(0);
-      transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
   25% {
-      -webkit-transform: translate(10px, 10px);
-      transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+    transform: translate(10px, 10px);
   }
   50% {
-      -webkit-transform: translate(5px, 5px);
-      transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
   }
   75% {
-      -webkit-transform: translate(10px, -5px);
-      transform: translate(10px, -5px);
+    -webkit-transform: translate(10px, -5px);
+    transform: translate(10px, -5px);
   }
   to {
-      -webkit-transform: translate(0);
-      transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
 }
 h1,
@@ -146,10 +146,10 @@ h6 {
 .cube {
   animation: rotatedelement 5s linear infinite;
 }
-.movedelement{
+.movedelement {
   animation: movedelement 8s linear infinite;
 }
-.movedelement2{
+.movedelement2 {
   animation: movedelement2 8s linear infinite;
 }
 .video-section {
@@ -159,6 +159,6 @@ h6 {
   background-size: 100% 100%;
   width: 100%;
 }
-.-z-1{
+.-z-1 {
   z-index: -1 !important;
 }
