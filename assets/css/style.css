@@ -78,7 +78,6 @@ h6 {
 }
 .header {
   background-image: url("../img/top_bg.jpg");
-  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
