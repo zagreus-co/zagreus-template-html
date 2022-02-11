@@ -82,7 +82,7 @@ h6 {
   background-size: cover;
   width: 100%;
 }
-.header-bg{
+.header-bg {
   position: absolute;
   left: 0;
   right: 0;
@@ -174,5 +174,15 @@ h6 {
 @media screen and (max-width: 640px) {
   .video-section {
     background-size: unset;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header-bg {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-bg {
+    height: 80%;
   }
 }
