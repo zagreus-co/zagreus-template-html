@@ -17,13 +17,28 @@
     </head>
     <body class="font-muli">
         <header class="header lg:bg-center md:bg-left-bottom">
-            <img class="header-bg" src="assets/img/top_bg.jpg" alt="">
+            <img class="header-bg" src="assets/img/top_bg.jpg" alt="" />
             <div class="container mx-auto px-3 relative z-10">
                 <nav class="navbar">
                     <div class="navbar-logo">
                         <img src="assets/img/ZagreusDevs-logo.svg" class="inline-block h-11 align-bottom" alt="Zagreus Developers | توسعه دهندگان نرم افزار زاگرس" />
                         <h1 class="hidden xl:inline-block mt-1 ml-2 text-2xl font-bold">Zagreus</h1>
-                        <button class="p-2 text-white inline-block ml-auto md:ml-0 lg:hidden"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <button id="hamburgerMenu" class="p-2 text-white inline-block ml-auto lg:hidden"><i class="fas fa-bars"></i></button>
+                    <div id="menu-mobile">
+                        <div id="sidebar-overlay" class="fixed hidden inset-0 side-nav-menu z-30 cursor-pointer"></div>
+                        <div id="Sidenav" class="h-full w-0 fixed z-50 top-0 right-0 bg-white overflow-x-hidden transition duration-400 pt-5 text-center">
+                            <ul>
+                                <div class="mb-5 text-left p-5">
+                                    <img src="assets/img/ZagreusDevs-logo.svg" class="inline-block h-14 align-bottom" alt="Zagreus Developers | توسعه دهندگان نرم افزار زاگرس" />
+                                </div>
+                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400 active"><a href="#one">Home</a></li>
+                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">About us</a></li>
+                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Our Team</a></li>
+                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Services</a></li>
+                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Contacts</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <ul class="nav-items">
                         <li class="inline-block relative"><a href="#one" class="nav-item">Home</a></li>
@@ -50,7 +65,7 @@
                     </ul>
                     <div class="contact-area">
                         <div class="hidden xl:inline-block mt-3 ml-3 pr-3 text-md text-black"><a href="tel:+989038267079" class="font-bold rubik">+989038267079</a></div>
-                        <a href="#" class="hidden md:inline-block rounded-full py-3 px-4 bg-pink-600 hover:bg-gray-800 text-white text-md text-center transition duration-700">Contact us</a>
+                        <a href="#" class="hidden lg:inline-block rounded-full py-3 px-4 bg-pink-600 hover:bg-gray-800 text-white text-md text-center transition duration-700">Contact us</a>
                     </div>
                 </nav>
             </div>
@@ -82,22 +97,22 @@
             <div class="relative overflow-hidden pb-7 mt-10">
                 <div class="container mx-auto grid lg:grid-cols-2 grid-cols-1">
                     <div class="mt-4 relative flex flex-wrap 2xl:pl-14 2xl:pr-14 lg:pr-0 lg:justify-start md:pr-0 md:justify-center lg:content-start lg:items-start">
-                        <div class="relative z-20 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
+                        <div class="relative z-10 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
                             <lord-icon class="w-24 h-24" src="https://cdn.lordicon.com/gqzfzudq.json" colors="primary:#121331,secondary:#db2777"></lord-icon>
                             <h4>Visit My Blog</h4>
                             <p>We use creative ideas for your future success.</p>
                         </div>
-                        <div class="relative z-20 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
+                        <div class="relative z-10 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
                             <lord-icon class="w-24 h-24" src="https://cdn.lordicon.com/gqzfzudq.json" colors="primary:#121331,secondary:#db2777"></lord-icon>
                             <h4>Visit My Blog</h4>
                             <p>We use creative ideas for your future success.</p>
                         </div>
-                        <div class="relative z-20 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
+                        <div class="relative z-10 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
                             <lord-icon class="w-24 h-24" src="https://cdn.lordicon.com/gqzfzudq.json" colors="primary:#121331,secondary:#db2777"></lord-icon>
                             <h4>Visit My Blog</h4>
                             <p>We use creative ideas for your future success.</p>
                         </div>
-                        <div class="relative z-20 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
+                        <div class="relative z-10 bg-white shadow-xl p-9 rounded-lg lg:w-5/12 w-full xl:m-6 m-3">
                             <lord-icon class="w-24 h-24" src="https://cdn.lordicon.com/gqzfzudq.json" colors="primary:#121331,secondary:#db2777"></lord-icon>
                             <h4>Visit My Blog</h4>
                             <p>We use creative ideas for your future success.</p>
@@ -118,8 +133,8 @@
                         <ul class="header--ul">
                             <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4 rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Understand Your Audience</li>
                             <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4 rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Engage Your Community</li>
-                            <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4  rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Reach Your Audience</li>
-                            <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4  rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Social Media Analytics</li>
+                            <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4 rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Reach Your Audience</li>
+                            <li class="inline-block lg:w-2/5 md:w-2/5 w-full lg:mt-4 my-4 rubik"><img class="inline-block mr-1.5 w-6" src="assets/img/check12.png" alt="" />Social Media Analytics</li>
                         </ul>
                         <a type="button" class="btn-light mt-4 inline-block duration-700">Discover more</a>
                     </div>
