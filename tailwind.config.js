@@ -1,24 +1,22 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "*.html",
+    "./pages/*.html",
+  ],
   theme: {
-    backgroundColor: theme => ({
-      ...theme('colors'),
-      'primary': '#f8f8f8',
-      'dark': '#030c26',
-     }),
     extend: {
-      fontFamily: {
-        'muli': ['Muli', 'Helvetica', 'Arial', 'sans-serif']
-      },
+      colors: {
+        theme: {
+          'primary': "#EF234E",
+          'darked-primary': "#C70039",
+          'secondary': "#1a233e",
+          'dark': '#030C26',
+          'gray': "#f8f8f8"
+        }
+      }
     },
   },
-  variants: {
-    extend: {
-      scale: ['group-hover'],
-      visibility: ['group-hover'],
-      transform: ['group-hover']
-    },
-  },
-  plugins: [],
+  plugins: [
+    require('postcss-import')
+  ],
 }
