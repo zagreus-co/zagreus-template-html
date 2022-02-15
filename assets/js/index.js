@@ -52,13 +52,7 @@ if (document.getElementById("Sidenav")) {
   }
 
 
-let createRedBox = () => {
-  let mainBox = document.querySelector("#contact-us-box");
-  let redBox = document.querySelector("#box-red");
-  redBox.style.width = `${mainBox.offsetWidth}px`;
-  redBox.style.height = `${mainBox.offsetHeight}px`;
-};
-createRedBox();
+
 
 
 
