@@ -18,7 +18,7 @@
     <body class="font-muli">
         <header class="header lg:bg-center md:bg-left-bottom">
             <img class="header-bg" src="assets/img/top_bg.jpg" alt="" />
-            <div class="container mx-auto px-3 relative z-10">
+            <div class="container mx-auto px-3 relative z-50 lg:z-10">
                 <nav class="navbar">
                     <div class="navbar-logo">
                         <img src="assets/img/ZagreusDevs-logo.svg" class="inline-block h-11 align-bottom" alt="Zagreus Developers | توسعه دهندگان نرم افزار زاگرس" />
@@ -26,17 +26,16 @@
                     </div>
                     <button id="hamburgerMenu" class="p-2 text-white inline-block ml-auto lg:hidden"><i class="fas fa-bars"></i></button>
                     <div id="menu-mobile">
-                        <div id="sidebar-overlay" class="fixed hidden inset-0 side-nav-menu z-30 cursor-pointer"></div>
-                        <div id="Sidenav" class="h-full w-0 fixed z-50 top-0 right-0 bg-white overflow-x-hidden transition duration-400 pt-5 text-center">
+                        <div id="Sidenav" class="h-full w-[300px] right-[-300px] fixed z-50 top-0 bg-white overflow-x-hidden  transition[right] duration-500 pt-5 text-center">
                             <ul>
-                                <div class="mb-5 text-left p-5">
-                                    <img src="assets/img/ZagreusDevs-logo.svg" class="inline-block h-14 align-bottom" alt="Zagreus Developers | توسعه دهندگان نرم افزار زاگرس" />
+                                <div class="mb-5 text-right p-5">
+                                    <img src="assets/img/ZagreusDevs-logo-dark.svg" class="inline-block h-14 align-bottom" alt="Zagreus Developers | توسعه دهندگان نرم افزار زاگرس" />
                                 </div>
-                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400 active"><a href="#one">Home</a></li>
-                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">About us</a></li>
-                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Our Team</a></li>
-                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Services</a></li>
-                                <li class="p-5 text-xl text-pink-600 ml-0 text-left transition duration-400"><a href="#one">Contacts</a></li>
+                                <li><a class="block p-5 text-xl text-pink-600 ml-0 text-right transition duration-400 active" href="#one">Home</a></li>
+                                <li><a class="block p-5 text-xl text-pink-600 ml-0 text-right transition duration-400" href="#one">About us</a></li>
+                                <li><a class="block p-5 text-xl text-pink-600 ml-0 text-right transition duration-400" href="#one">Our Team</a></li>
+                                <li><a class="block p-5 text-xl text-pink-600 ml-0 text-right transition duration-400" href="#one">Services</a></li>
+                                <li><a class="block p-5 text-xl text-pink-600 ml-0 text-right transition duration-400" href="#one">Contacts</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,58 +1,45 @@
 //Variable
 
-const emailInput = document.querySelector('#email-input');
+const emailInput = document.querySelector("#email-input");
 const navbar = document.querySelector("#Sidenav");
-const navbarOutSide = document.querySelector("#sidebar-overlay");
 
+let outSide = document.createElement("div");
 
 //Event Listener
 
 (function () {
-    emailInput.addEventListener('blur' , validateEmail)	 
+  emailInput.addEventListener("blur", validateEmail);
+  document.querySelector("#hamburgerMenu").addEventListener("click", showMobileMenu);
 })();
-
-eventListener();
-function eventListener() {
-  document.querySelector("#hamburgerMenu").addEventListener("click", openNav);
-  navbarOutSide.addEventListener("click", closeNav);
-}
 
 //functions
 
-function validateEmail(){
-    if(this.value.includes('@')){
-      this.parentElement.style.borderColor = "white";
-    }
-    else{
-        this.parentElement.style.borderColor = "red";  
-    }
+function validateEmail() {
+  if (this.value.includes("@")) {
+    this.parentElement.style.borderColor = "white";
+  } else {
+    this.parentElement.style.borderColor = "red";
+  }
 }
 
-function openNav() {
-    navbar.style.width = "300px";
-    document.querySelectorAll("#Sidenav a").forEach((e) => {
-      e.style.display = "block";
-    });
-    navbarOutSide.style.display = "block";
-  }
-  
-  function closeNav() {
-    navbar.style.width = "0";
-    document.querySelectorAll("#Sidenav a").forEach((e) => {
-      e.style.display = "none";
-    });
-    navbarOutSide.style.display = "none";
-  }
-
-//loop
-if (document.getElementById("Sidenav")) {
-    document.querySelectorAll("#Sidenav a").forEach((e) => {
-      e.style.display = "none";
-    });
-  }
-
-
-
-
-
-
+function sleep(time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+function showMobileMenu() {
+  navbar.classList.remove("hidden");
+  sleep(10).then(() => {
+    navbar.style.right = "0px";
+  });
+  outSide.classList.add("outside");
+  outSide.setAttribute("onclick", "hideMobileMenu()");
+  document.body.appendChild(outSide);
+}
+function hideMobileMenu() {
+  navbar.style.right = "-300px";
+  sleep(601).then(() => {
+    navbar.classList.add("hidden");
+  });
+  outSide.classList.remove("outside");
+  outSide.removeAttribute("onclick");
+  document.body.appendChild(outSide);
+}
