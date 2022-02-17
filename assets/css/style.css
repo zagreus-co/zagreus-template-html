@@ -194,7 +194,12 @@ h6 {
   }
 }
 @media screen and (max-width: 1024px) {
+  header{
+    background-color: #030C26;
+  }
   .header-bg {
-    height: 80%;
+    top: auto;
+    bottom: 0;
+    height: auto;
   }
 }
