@@ -66,9 +66,6 @@
   }
 }
 
-
-
-
 h1,
 h2,
 h3,
@@ -176,10 +173,10 @@ h6 {
 .-z-1 {
   z-index: -1 !important;
 }
-.side-nav-menu{
+.side-nav-menu {
   background-color: rgba(45, 45, 45, 0.54);
 }
-.active{
+.active {
   background-color: #05123c;
   color: #fff;
 }
@@ -194,12 +191,15 @@ h6 {
   }
 }
 @media screen and (max-width: 1024px) {
-  header{
-    background-color: #030C26;
+  header {
+    background-image: linear-gradient(#030c26, #030c26);
+    background-size: 100% 55% !important;
+    background-repeat: no-repeat;
+    background-position: top !important;
   }
   .header-bg {
-    top: auto;
-    bottom: 0;
-    height: auto;
+    top: 55%;
+    bottom: auto;
+    height: auto !important;
   }
 }
