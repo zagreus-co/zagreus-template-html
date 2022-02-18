@@ -183,6 +183,7 @@ h6 {
   background-color: #05123c;
   color: #fff;
 }
+
 @media screen and (max-width: 640px) {
   .video-section {
     background-size: unset;
