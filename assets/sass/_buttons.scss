@@ -1,0 +1,38 @@
+button{
+  all: unset;
+}
+.btn {
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: none;
+  }
+}
+.btn-default {
+  padding: 0.625rem 1.875rem;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #f54e58 0%,
+    #e44095 50%,
+    #b242b4 81%,
+    #7c47cb 100%
+  );
+  color: #fff;
+  border: none;
+  &:hover {
+    color: #fff;
+    background-position: right center;
+  }
+}
+.btn-transparent {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #ffffff17;
+  &:hover {
+    color: #fff;
+    background: $orange;
+  }
+}
